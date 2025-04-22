@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fake DBS Update Service</title>
+		<style>
+			body {
+        max-width: 650px;
+        margin: 40px auto;
+        padding: 0 10px;
+        font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color: #444;
+      }
+
+      h1,h2,h3 {
+        line-height:1.2;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: #c9d1d9;
+          background: #0d1117;
+        }
+        
+        a:link {
+          color: #58a6ff;
+        }
+        
+        a:visited {
+          color: #8e96f0;
+        }
+      }
+		</style>
+	</head>
+	<body>
+		<h1>Fake DBS Update Service</h1>
+    <p>This is a fake implementation of the Disclosure and Barring Service's <a href="https://assets.publishing.service.gov.uk/media/67449590ece939d55ce93006/Multiple_Status_Checking_Guide_V2.0_23112024.pdf">Multiple Status Check Facility</a>. Perhaps confusingly, this is an API which allows employers to run an "update check" on a (single) DBS certificate to verify if the certificate is still current. In the DBS' own words, "a Multiple Status Check is many Single Status Checks happening in quick succession".</p>
+    <p>For more details (or to contribute improvements) see <a href="https://github.com/BenjaminEHowe/fake-dbs-update-service">the GitHub repository BenjaminEHowe/fake-dbs-update-service</a>.</p>
+    <h2>History / Context</h2>
+    <p>The Disclosure and Barring Service (DBS) was formed in 2012, replacing the Criminal Records Bureau. One of the key advantages of certificates issued by the DBS (excluding basic certificates) is that they can be enrolled in the <a href="https://www.gov.uk/dbs-update-service">update service</a>. As of April 2025 the charge for the update service is £16 per year, although this is waived for volunteers. The update service means that a DBS certificate can be "evergreen" and doesn't need to be perodically replaced. In addition, a certificate issued for one employer can be verified by a different employer provided that the certificate covers the appropriate checks. See <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/about">the gov.uk page about the DBS</a> for more details.</p>
+	</body>
+</html>
