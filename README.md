@@ -20,7 +20,7 @@ The API takes a few inputs, all of which are required:
   - Starts with 4: returns status `NEW_INFO`.
   - Starts with 9: throws 500 Internal Server Error.
   - Any other digit: throws 400 Bad Request.
-- `dateOfBirth`: can be any valid date.
+- `dateOfBirth`: can be any valid date in format DD/MM/YYYY.
 - `surname`: can be any string.
 - `hasAgreedTermsAndConditions`: must be `true`.
 - `organisationName`: can be any string.
