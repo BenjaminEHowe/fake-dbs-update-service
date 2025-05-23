@@ -86,13 +86,13 @@ export async function onRequest(context) {
 
   switch (disclosureRefFirstDigit) {
     case '1':
-      return new Response(NOT_FOUND_XML, { headers: { "content-type": "application/xml" } });
+      return new Response(NOT_FOUND_XML, { headers: { "content-type": "application/xhtml+xml" } });
     case '2':
-      return new Response(generateXml("BLANK_NO_NEW_INFO", surname), { headers: { "content-type": "application/xml" } });
+      return new Response(generateXml("BLANK_NO_NEW_INFO", surname), { headers: { "content-type": "application/xhtml+xml" } });
     case '3':
-      return new Response(generateXml("NON_BLANK_NO_NEW_INFO", surname), { headers: { "content-type": "application/xml" } });
+      return new Response(generateXml("NON_BLANK_NO_NEW_INFO", surname), { headers: { "content-type": "application/xhtml+xml" } });
     case '4':
-      return new Response(generateXml("NEW_INFO", surname), { headers: { "content-type": "application/xml" } });
+      return new Response(generateXml("NEW_INFO", surname), { headers: { "content-type": "application/xhtml+xml" } });
     default:
       return new Response(`Unrecognised \`disclosureRef\` first digit: ${disclosureRefFirstDigit}`, {
         headers: { "content-type": "text/plain" },
